@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> <!-- Include Google Charts loader -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+    <title>EIBULL Dash</title>
+    
+</head>
+
+<body>
+    
+
+    <div class="main">
+        <div class="sidebar">
+            <div class="title">
+                <div class="kicuna">
+                    <img src="images.png" class="bull">
+                </div>
+                <div class="kicu">
+                    <h1>EIBULL</h1>
+                </div>
+            </div>
+        
+            <div class="nav">
+                <div class="nav-option">
+                    <div>
+                        <i class="fa-solid fa-table-columns"></i>
+                        <a href="#">Dashboard</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                </div>
+                <div class="nav-option">
+                    <div>
+                        <i class="fa-solid fa-calendar-week"></i>
+                        <a href="#">Events</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                </div>
+                <div class="nav-option">
+                    <div>
+                        <i class="fa-regular fa-user-group"></i>
+                        <a href="#">Identifiers</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                </div>
+                <div class="nav-option">
+                    <div>
+                        <i class="fa-solid fa-chart-simple"></i>
+                        <a href="#">Statics</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="lower">
+                <div class="nav-option">
+                    <div>
+                        <i class="fa-solid fa-gear"></i>
+                        <a href="#">Settings</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                </div>
+                <div class="nav-option">
+                    <div>
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        <a href="#">Sign Out</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="main-body">
+            <div class="head">
+
+            </div>
+            <div class="topu">
+            <div class="fpart">
+                <div class="part">
+                    <h3>Recent Actions</h3>
+                    <div id="piechart" class="chart"></div>
+                    
+                </div>
+                <div class="part">
+                    <h3>Recent Events</h3>
+                    <div id="donutchart" class="chart"></div>
+                        
+
+                </div>
+                <div class="part">
+                    <h3>Recommend Identifier</h3>
+                    <div id="barchart" class="chart"></div>
+                       
+                       
+                </div>
+
+            </div>
+            <div class="secpart">
+                <div class="part">
+                    <h3>Recent High Risk Employee Leaked Credentials</h3>
+                    <div id="barchart2" class="chart"></div>
+                       
+                </div>
+                <div class="part">
+                    <h3>Recent High Risk Corporate Infected Devices</h3>
+                    <div id="infectedDeviceChart" class="chart"></div>
+                </div>
+                <div class="part">
+                    <h3>Recent High Risk Look Alike Domains</h3>
+                    <div id="lookAlikeDomainsChart" class="chart"></div>
+
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <script src="action.js"></script>
+    <script src="event.js"></script>
+    <script src="corporate.js"></script>
+    <script src="leaked.js"></script>
+    <script src="identifier.js"></script>
+    <script src="alike.js"></script>
+</body>
+
+</html>

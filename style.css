@@ -1,0 +1,117 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  overflow: hidden;
+  color: rgb(37, 32, 32);
+  
+  background-image: url('back.jpg'); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed; 
+}
+
+
+.main {
+  display: flex;
+  height: 100vh;
+  padding: 0.5rem;
+}
+
+/* sidebar */
+.title {
+  display: flex;
+  justify-content: center;
+}
+
+.kicuna {
+  mix-blend-mode: multiply;
+  padding-right: 5px;
+  margin-top: 15px;
+}
+
+/* Remove position: absolute from .lower */
+.lower {
+  margin-top: auto; /* Makes it stick to the bottom within the flex container */
+  width: 100%;
+}
+
+/* nav-option styling */
+.nav-option {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;
+  opacity: 0.7; /* Increased visibility */
+  height: 20px;
+  font-size: 12px; /* Increased font size for better visibility */
+  margin-left: 5px;
+  padding: 10px; /* Add padding for better clickability */
+}
+
+.nav-option:hover {
+  background-color: rgb(211, 178, 135);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  padding: 8px;
+}
+
+.sidebar {
+  background-color: rgb(233, 229, 229);
+  width: 200px;
+  border-radius: 0.5rem;
+  margin-right: 0.5rem;
+  display: flex;
+  flex-direction: column; /* Ensures content flows vertically */
+}
+
+.head {
+  background-color: rgb(233, 229, 229);
+  height: 30px;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+  /* main body */
+.main-body{
+  margin-top: 5px;
+  overflow: auto;
+}
+ .topu{
+  margin-top: 15px;
+ }
+  .fpart{
+    margin-top: 20px;
+    display: flex;
+    margin: 10px;
+    
+  }
+  .secpart{
+    display: flex;
+    margin: 10px;
+    
+  }
+.part{
+  width: 265px;
+  height: 290px;
+  background-color: rgb(233, 229, 229);
+  margin: 8px;
+  border-radius: .5rem;
+  text-align: center;
+}
+
+.bull{
+  height: 50px;
+  width: 50px;
+}
+
+.chart{
+  mix-blend-mode: multiply;
+  
+}
+
+
